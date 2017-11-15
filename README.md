@@ -1,5 +1,5 @@
 # react-router4-training
-React Router 4.0入门（Web Only）
+React Router 4.0入门教程（Web Only）
 
 下载项目后，通过npm install安装，npm run dev启动开发模式，通过http://localhost:8888/ 访问。
 
