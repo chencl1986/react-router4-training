@@ -1,0 +1,507 @@
+.fl(@dumy: 1) {
+	float: left;
+}
+.fr(@dumy: 1) {
+	float: right;
+}
+.fn(@dumy: 1) {
+	float: none;
+}
+.pr(@dumy: 1) {
+	position: relative;
+}
+.pa(@dumy: 1) {
+	position: absolute;
+}
+.pf(@dumy: 1) {
+	position: fixed;
+}
+.pa0(@dumy: 1) {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.patl0(@dumy: 1) {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.patr0(@dumy: 1) {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.pabl0(@dumy: 1) {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+.pabr0(@dumy: 1) {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+.pf0(@dumy: 1) {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+.pftl0(@dumy: 1) {
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.pftr0(@dumy: 1) {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+.pfbl0(@dumy: 1) {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.pfbr0(@dumy: 1) {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+.dn(@dumy: 1) {
+	display: none;
+}
+.db(@dumy: 1) {
+	display: block;
+}
+.df(@dumy: 1) {
+	display: flex;
+}
+.fc (@dumy: 1) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.ove(@dumy: 1) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: keep-all;
+}
+.sn(@dumy: 1) {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+.mw(@dumy: 1) {
+	min-width: 100%;
+}
+.w(@dumy: 1) {
+	width: 100%;
+}
+.h(@dumy: 1) {
+	height: 100%;
+}
+.fwh(@dumy: 1) {
+	width: 100%;
+	height: 100%;
+}
+.ma(@dumy: 1) {
+	margin: 0 auto;
+}
+.mtb (@margin) {
+	margin-top: @margin;
+	margin-bottom: @margin;
+}
+.mlr (@margin) {
+	margin-left: @margin;
+	margin-right: @margin;
+}
+.p (@padding) {
+	padding: @padding @padding @padding @padding;
+}
+.ptb (@padding) {
+	padding-top: @padding;
+	padding-bottom: @padding;
+}
+.plr (@padding) {
+	padding-left: @padding;
+	padding-right: @padding;
+}
+.s(@len: 100%) {
+	width: @len;
+	height: @len;
+}
+.r(@dia) {
+	width: @dia;
+	height: @dia;
+	.bra(50%);
+}
+.rhz(@dia, @fz) {
+	width: @dia;
+	height: @dia;
+	line-height: @dia;
+	font-size: @fz;
+	text-align: center;
+	.bra(50%);
+}
+.rhcz(@dia, @color, @fz) {
+	width: @dia;
+	height: @dia;
+	line-height: @dia;
+	color: @color;
+	font-size: @fz;
+	text-align: center;
+	.bra(50%);
+}
+.bdn(@dumy: 1) {
+	border: none;
+}
+.bd(@color, @width: 1px) {
+	border: @width solid @color;
+}
+.bt(@color, @width: 1px) {
+	border-top: @width solid @color;
+}
+.bb(@color, @width: 1px) {
+	border-bottom: @width solid @color;
+}
+.br(@color, @width: 1px) {
+	border-right: @width solid @color;
+}
+.bl(@color, @width: 1px) {
+	border-left: @width solid @color;
+}
+.bgf(@dumy: 1) {
+	background-color: #fff;
+}
+.bgb(@dumy: 1) {
+	background-color: #000;
+}
+.bgt(@dumy: 1) {
+	background-color: transparent;
+}
+.bz(@dumy: 1) {
+	-webkit-background-size: 100% 100%;
+	-moz-background-size: 100% 100%;
+	-ms-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+	background-size: 100% 100%;
+}
+.bgc(@dumy: 1) {
+	-webkit-background-size: contain;
+	-moz-background-size: contain;
+	-ms-background-size: contain;
+	-o-background-size: contain;
+	background-size: contain;
+}
+.bgz (@size: 100% 100%) {
+	-webkit-background-size: @size;
+	-moz-background-size: @size;
+	-ms-background-size: @size;
+	-o-background-size: @size;
+	background-size: @size;
+}
+.lh (@height) {
+	height: @height;
+	line-height: @height;
+}
+.lhc (@height) {
+	height: @height;
+	line-height: @height;
+	text-align: center;
+}
+.lhn (@height, @n: 2) {
+	height: @height * @n;
+	line-height: @height;
+}
+.lhnc (@height, @n: 2) {
+	height: @height * @n;
+	line-height: @height;
+	text-align: center;
+}
+.lhnf (@height, @fz, @n: 2) {
+	height: @height * @n;
+	line-height: @height;
+	font-size: @fz;
+}
+.lhnfc (@height, @fz, @n: 2) {
+	height: @height * @n;
+	line-height: @height;
+	font-size: @fz;
+	text-align: center;
+}
+.lhncf (@height, @color, @fz, @n: 2) {
+	height: @height * @n;
+	line-height: @height;
+	color: @color;
+	font-size: @fz;
+}
+.lhncfc (@height, @color, @fz, @n: 2) {
+	height: @height * @n;
+	line-height: @height;
+	color: @color;
+	font-size: @fz;
+	text-align: center;
+}
+.lhf(@height, @fz) {
+	height: @height;
+	line-height: @height;
+	font-size: @fz;
+}
+.lhfc(@height, @fz) {
+	height: @height;
+	line-height: @height;
+	font-size: @fz;
+	text-align: center;
+}
+.lhcf(@height, @color, @fz) {
+	height: @height;
+	line-height: @height;
+	color: @color;
+	font-size: @fz;
+}
+.lhcfc(@height, @color, @fz) {
+	height: @height;
+	line-height: @height;
+	color: @color;
+	font-size: @fz;
+	text-align: center;
+}
+.cf(@color, @fz) {
+	color: @color;
+	font-size: @fz;
+}
+.ovl(@dumy: 1) {
+	text-decoration: overline;
+}
+.lt(@dumy: 1) {
+	text-decoration: line-through;
+}
+.cw(@dumy: 1) {
+	color: #ffffff;
+}
+.cb(@dumy: 1) {
+	color: #000000;
+}
+.fwb(@dumy: 1) {
+	font-weight: bold;
+}
+.fwn(@dumy: 1) {
+	font-weight: normal;
+}
+.tc(@dumy: 1) {
+	text-align: center;
+}
+.tr(@dumy: 1) {
+	text-align: right;
+}
+.es(@dumy: 1) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: keep-all;
+}
+.em (@line: 2) {
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: @line;
+	-webkit-box-orient: vertical;
+}
+.op (@opacity) {
+	opacity: @opacity * 0.01;
+	filter: alpha(opacity=@opacity);
+}
+.filter (@filter) {
+	-webkit-filter: @filter;
+	-moz-filter: @filter;
+	-ms-filter: @filter;
+	-o-filter: @filter;
+	filter: @filter;
+}
+.bra (@radius: 50%) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+	-ms-border-radius: @radius;
+	-o-border-radius: @radius;
+	border-radius: @radius;
+}
+.trf (@trf) {
+	-webkit-transform: @trf;
+	-moz-transform: @trf;
+	-ms-transform: @trf;
+	-o-transform: @trf;
+	transform: @trf;
+}
+.trs (@trs) {
+	-webkit-transition: @trs;
+	-moz-transition: @trs;
+	-ms-transition: @trs;
+	-o-transition: @trs;
+	transition: @trs;
+}
+.trsa (@time: 0.5s, @fun: linear) {
+	-webkit-transition: all @time @fun;
+	-moz-transition: all @time @fun;
+	-ms-transition: all @time @fun;
+	-o-transition: all @time @fun;
+	transition: all @time @fun;
+}
+.bs1 (@shadow) {
+	-webkit-box-shadow: @shadow;
+	-moz-box-shadow: @shadow;
+	-ms-box-shadow: @shadow;
+	-o-box-shadow: @shadow;
+	box-shadow: @shadow;
+}
+.bs2 (@s1, @s2) {
+	-webkit-box-shadow: @s1, @s2;
+	-moz-box-shadow: @s1, @s2;
+	-ms-box-shadow: @s1, @s2;
+	-o-box-shadow: @s1, @s2;
+	box-shadow: @s1, @s2;
+}
+.bs3 (@s1, @s2, @s3) {
+	-webkit-box-shadow: @s1, @s2, @s3;
+	-moz-box-shadow: @s1, @s2, @s3;
+	-ms-box-shadow: @s1, @s2, @s3;
+	-o-box-shadow: @s1, @s2, @s3;
+	box-shadow: @s1, @s2, @s3;
+}
+.bs4 (@s1, @s2, @s3, @s4) {
+	-webkit-box-shadow: @s1, @s2, @s3, @s4;
+	-moz-box-shadow: @s1, @s2, @s3, @s4;
+	-ms-box-shadow: @s1, @s2, @s3, @s4;
+	-o-box-shadow: @s1, @s2, @s3, @s4;
+	box-shadow: @s1, @s2, @s3, @s4;
+}
+.bsr1p(@color) {
+	.bs1(0 0 0 1px @color);
+}
+.bsr1pi(@color) {
+	.bs1(0 0 0 1px @color inset);
+}
+.bs2ptbi(@color) {
+	.bs2(0 1px 0 0 @color inset, 0 -1px 0 0 @color inset);
+}
+.bs2plri(@color) {
+	.bs2(1px 0 0 0 @color inset, -1px 0 0 0 @color inset);
+}
+.bs2tbi(@color) {
+	.bs2(0 1px 0 0 @color inset, 0 -1px 0 0 @color inset);
+}
+.bs2lri(@color) {
+	.bs2(1px 0 0 0 @color inset, -1px 0 0 0 @color inset);
+}
+.bs1pbi (@color) {
+	.bs1(0 -1px 0 0 @color inset);
+}
+.bs1pti (@color) {
+	.bs1(0 1px 0 0 @color inset);
+}
+.bs1pli (@color) {
+	.bs1(1px 0 0 0 @color inset);
+}
+.bs1pri (@color) {
+	.bs1(-1px 0 0 0 @color inset);
+}
+.bs1bi (@color) {
+	.bs1(0 -1px 0 0 @color inset);
+}
+.bs1ti (@color) {
+	.bs1(0 1px 0 0 @color inset);
+}
+.bs1li (@color) {
+	.bs1(1px 0 0 0 @color inset);
+}
+.bs1ri (@color) {
+	.bs1(-1px 0 0 0 @color inset);
+}
+.disbox(@dumy: 1) {
+	// display: -moz-box; /* Firefox */
+	// display: -webkit-box; /* Safari and Chrome */
+	// display: -ms-flexbox; /* Internet Explorer 10 */
+	// display: box;
+}
+.bf(@dumy: 1) {
+	// -moz-box-flex:1.0; /* Firefox */
+	// -webkit-box-flex:1.0; /* Safari and Chrome */
+	// -ms-flex:1.0; /* Internet Explorer 10 */
+	// box-flex:1.0;
+}
+.curp(@dumy: 1) {
+	cursor: pointer;
+}
+.aft(@dumy: 1) {
+	content: '\200B';
+	display: block;
+	position: absolute;
+}
+.bef(@dumy: 1) {
+	content: '\200B';
+	display: block;
+	position: absolute;
+}
+.rzn(@dumy: 1) {
+	resize: none;
+}
+.rzb(@dumy: 1) {
+	resize: both;
+}
+.rzv(@dumy: 1) {
+	resize: vertical;
+}
+.rzh(@dumy: 1) {
+	resize: horizontal;
+}
+.if (@con, @height, @size, @color: #fff, @font: 'iconfont') {
+	content: @con;
+	.db;
+	.lhcfc(@height, @color, @size);
+	font-family: @font;
+}
+.if2 (@con, @width, @height, @size, @color: #fff, @font: 'iconfont') {
+	.patl0;
+	width: @width;
+	content: @con;
+	.db;
+	.lhcfc(@height, @color, @size);
+	font-family: @font;
+}
+.if3 (@con, @width, @height, @size, @color: #fff, @font: 'iconfont') {
+	.patr0;
+	width: @width;
+	content: @con;
+	.db;
+	.lhcfc(@height, @color, @size);
+	font-family: @font;
+}
+.nor (@dumy: 1) {
+	// 修改通用样式
+	span, strong, em, b, i, a, img, li, var, del, ins, {
+		display: block;
+		font-weight: normal;
+		font-style: normal;
+	}
+	form input, form textarea {
+		background: transparent;
+		border: none;
+		outline: none;
+	}
+	input, textarea {
+		border: none;
+		outline: none;
+		background: transparent;
+	}
+	input::-ms-clear, input::-ms-reveal {
+		display: none;
+	}
+	a, input, textarea, tr {
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	}
+}

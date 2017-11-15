@@ -1,0 +1,19 @@
+{
+  "presets": [
+    "es2015",
+    "react",
+    "stage-0",
+    ["env", { "modules": false, "targets": { "node": 4 } }]
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "lodash",
+        "external-helpers",
+        ["transform-runtime", { polyfill: false }],
+        ["transform-class-properties", { "spec": true }],
+        ["import", { "style": true, "libraryName": "antd-mobile" }]
+      ]
+    }
+  }
+}

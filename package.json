@@ -1,0 +1,63 @@
+{
+	"name": "recharge",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"build": "rimraf h5 && webpack --config ./webpack.production.config.js --define process.env.NODE_ENV='production'",
+		"dev": "webpack-dev-server --devtool eval --colors --content-base build"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^7.1.6",
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-plugin-external-helpers": "^6.22.0",
+		"babel-plugin-import": "^1.6.2",
+		"babel-plugin-lodash": "^3.3.2",
+		"babel-plugin-react-transform": "^2.0.2",
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-env": "^1.6.1",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-react": "^6.24.1",
+		"babel-preset-stage-0": "^6.24.1",
+		"css-loader": "^0.28.7",
+		"extract-text-webpack-plugin": "^2.1.2",
+		"file-loader": "^0.11.2",
+		"html-webpack-plugin": "^2.30.1",
+		"json-loader": "^0.5.7",
+		"less": "^2.7.3",
+		"less-loader": "^4.0.5",
+		"lodash-webpack-plugin": "^0.11.4",
+		"mockjs": "^1.0.1-beta3",
+		"node-sass": "^4.6.1",
+		"optimize-css-assets-webpack-plugin": "^3.2.0",
+		"postcss-loader": "^2.0.8",
+		"postcss-pxtorem": "^4.0.1",
+		"sass-loader": "^6.0.6",
+		"style-loader": "^0.18.2",
+		"svg-sprite-loader": "^0.3.1",
+		"url-loader": "^0.5.9",
+		"webpack": "^3.8.1",
+		"webpack-dev-server": "^2.9.4"
+	},
+	"dependencies": {
+		"antd-mobile": "^2.0.3",
+		"axios": "^0.17.1",
+		"babel-polyfill": "^6.26.0",
+		"fastclick": "^1.0.6",
+		"history": "^4.7.2",
+		"lodash": "^4.17.4",
+		"moment": "^2.19.2",
+		"qs": "^6.5.1",
+		"react": "^16.1.1",
+		"react-dom": "^16.1.1",
+		"react-fastclick": "^3.0.2",
+		"react-router-dom": "^4.2.2"
+	},
+	"description": "",
+	"theme": {
+		"hd": "2px"
+	}
+}
