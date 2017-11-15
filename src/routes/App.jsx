@@ -18,7 +18,7 @@ class App extends Component{
 					leftContent={'React Router 4不再需要单独配置路由，而是采用组件思想创建路由，即每个路由都是一个组件。'}
 				/>
 				<Text
-					leftContent={'以下通过这个Demo介绍React Router 4的使用方式（你需要结合Demo代码中的注释来阅读）：'}
+					leftContent={'以下通过这个Demo介绍React Router 4的使用方式（你需要结合Demo中的代码和注释来阅读）：'}
 				/>
 				<Text
 					leftContent={'1. 首先通过npm安装react-router-dom、history，然后打开router.js。'}

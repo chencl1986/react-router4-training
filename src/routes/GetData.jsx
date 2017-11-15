@@ -26,7 +26,7 @@ class GetData extends Component{
 				/>
 				<Text
 					className={'indent'}
-					leftContent={'b. 跳转时url为"/GetData/Params/数据。"'}
+					leftContent={'b. 跳转时url为"/GetData/Params/数据"。'}
 				/>
 				<Text
 					className={'indent'}
@@ -41,7 +41,7 @@ class GetData extends Component{
 				/>
 				<Text
 					className={'indent'}
-					leftContent={'b. 跳转时url为"/GetData/Params?字段=数据。"'}
+					leftContent={'b. 跳转时url为"/GetData/Params?字段=数据"。'}
 				/>
 				<Text
 					className={'indent'}
